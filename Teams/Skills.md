@@ -1,5 +1,8 @@
 # Skills
 
-Technical Skills: Java, Python, HTML, CSS, JavaScript | Other Skills: Teamwork, Communication, Problem Solving
-Technical Skills: C++, Python, JavaScript, HTML, CSS | Other Skills: Time Management, Organization, Adaptability
+Rana Riyaz- Technical Skills: Java, Python, HTML, CSS, JavaScript | Other Skills: Teamwork, Communication, Problem Solving
+
+Serly Torrosian- Technical Skills: C++, Python, JavaScript, HTML, CSS | Other Skills: Time Management, Organization, Adaptability
+
+Meera Alhosani- Technical Skills: SQL, HTML, CSS, Java, C++ | Other Skills: Research, Teamwork, UI/UX Design, Creativity
 
