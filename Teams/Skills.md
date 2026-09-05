@@ -6,3 +6,4 @@ Serly Torrosian- Technical Skills: C++, Python, JavaScript, HTML, CSS | Other Sk
 
 Meera Alhosani- Technical Skills: SQL, HTML, CSS, Java, C++ | Other Skills: Research, Teamwork, UI/UX Design, Creativity
 
+Yusr Ahmed- Technical Skills: Data structures, C++, Machine Learning | Other Skills: Research, Teamwork, Flexibility 
