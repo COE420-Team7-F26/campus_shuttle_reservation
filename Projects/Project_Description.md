@@ -1,0 +1,3 @@
+The problem the Campus Shuttle Reservation system addresses is the unpredictable nature of campus shuttles as students may not be able to ride the shuttle since it is full or because they are not aware of when it will arrive. The intended users for this system are university students and the campus shuttle staff. The main features of the Campus Shuttle Reservation system are  letting students view the occupancy and book shuttle seats in advance, and allowing the staff to use the system to notify the students if there are any delays in the shuttle or changes in timings or location. The key functionalities the system is expected to provide are seat booking and cancellation, and notifications about shuttle occupancy, and changes or delays.
+
+ 
