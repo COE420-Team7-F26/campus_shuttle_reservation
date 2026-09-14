@@ -1,15 +1,28 @@
 Technical Feasibility
 Can the system be developed using the technologies, tools, hardware, software, and technical skills available to the team?
+
 Yes, the technical skills are accessible and available to the team to develop the system. The core functionalities of the system can be implemented through cross-platform mobile development and real-time database management. The team plans to manage the risk of using unfamiliar technologies (eg. user authentication) by researching early and developing small prototypes. 
+
+
 Economic Feasibility
 Are the expected costs and resources reasonable for the proposed project? Identify any expected costs, required resources, or limitations.
+
 The expected cost and resource allocations are very reasonable. The team can avoid hardware and software expenses by using free-tier cloud hosting platforms, open-source frameworks and free IDEs. Additionally, the team already has access to collaboration tools such as GitHub. Once the final prototype is complete, the team can be entrusted with a budget to implement the system outside cloud free-tier limits. 
+
+
 Operational Feasibility
 Is the proposed system expected to solve a real problem or meet a genuine user need? Are the intended users likely to use and accept the system?
+
 The proposed system is expected to solve the real problem of the unpredictability of shuttle arrivals. Solving this issue will result in reducing the waiting time of students in unfavorable weather conditions. Nonetheless, the target groups of the proposed system (students, drivers and transportation administrators) are very likely to adapt and accept the system for its benefits such as reporting status updates, managing and controlling the efficiency of the university transportation system and receiving delay notifications. Additionally, features such as “no-show” reporting for both drivers and students will force accountability and increase the reliability of the system. 
+
+
 Schedule Feasibility
 Can the major project features and deliverables realistically be completed within the available course duration?
+
 Yes, the major project features can be completed within Fall 26. Using our incremental software process model, the team will ensure that the core functionalities of the system are completed first, then admin functions can be deferred to later increments. The team plans to  prioritise features and divide the project into smaller tasks with weekly monitoring to mitigate any schedule delay. 
+
+
 Overall Feasibility
 Based on the above analysis, provide a brief conclusion stating whether the project appears feasible and identify any major constraints that may affect its successful completion.
+
 Based on the analysis above, the project is highly feasible. The major potential constraints for the project would be team member availability and integration problems when combining work done by different team members. The team plans to manage such constraints by consistent naming conventions, frequent commits, branching and consistent testing after adding each increment. 
