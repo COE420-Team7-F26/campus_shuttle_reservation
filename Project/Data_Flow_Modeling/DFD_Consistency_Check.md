@@ -1,0 +1,1 @@
+All Lab 4 artifacts are consistent and have been verified.
