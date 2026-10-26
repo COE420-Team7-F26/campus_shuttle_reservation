@@ -1,3 +1,4 @@
+#Core Processes Matrix
 | Process No. and Name | Input Data | Output Data | Rules |
 |---|---|---|---|
 | P1 –1.0 Manage user authentication | Login/logout requests from students, shuttle drivers, transport administrators, and IT staff; user credentials and roles from D1 User Accounts. | Session status; session information stored in D1; system error logs returned to IT staff upon request. | Validate login credentials against D1 before creating a session. Assign access according to the stored user role. Reject invalid login attempts. End the active session when the user logs out. Only authorized IT staff may request system error logs.|
