@@ -13,7 +13,7 @@ The expected cost and resource allocations are very reasonable. The team can avo
 Operational Feasibility
 Is the proposed system expected to solve a real problem or meet a genuine user need? Are the intended users likely to use and accept the system?
 
-The proposed system is expected to solve the real problem of the unpredictability of shuttle arrivals. Solving this issue will result in reducing the waiting time of students in unfavorable weather conditions. Nonetheless, the target groups of the proposed system (students, drivers and transportation administrators) are very likely to adapt and accept the system for its benefits such as reporting status updates, managing and controlling the efficiency of the university transportation system and receiving delay notifications. Additionally, features such as “no-show” reporting for both drivers and students will force accountability and increase the reliability of the system. 
+The proposed system is expected to solve the real problem of the unpredictability of shuttle arrivals. Solving this issue will result in reducing the waiting time of students in unfavorable weather conditions. Nonetheless, the target groups of the proposed system (students, drivers and transportation administrators) are very likely to adapt and accept the system for its benefits such as reporting status updates, managing and controlling the efficiency of the university transportation system and receiving delay notifications. Additionally, features such as seamless schedule updating from transport administrators to students, allows for less confusion and a smoother transportation experience.
 
 
 Schedule Feasibility
@@ -25,4 +25,4 @@ Yes, the major project features can be completed within Fall 26. Using our incre
 Overall Feasibility
 Based on the above analysis, provide a brief conclusion stating whether the project appears feasible and identify any major constraints that may affect its successful completion.
 
-Based on the analysis above, the project is highly feasible. The major potential constraints for the project would be team member availability and integration problems when combining work done by different team members. The team plans to manage such constraints by consistent naming conventions, frequent commits, branching and consistent testing after adding each increment. 
+Based on the analysis above, the project is highly feasible with manageable risk. The major potential constraints for the project would be team member availability and integration problems when combining work done by different team members. The team plans to manage such constraints by consistent naming conventions, frequent commits, branching and consistent testing after adding each increment. 

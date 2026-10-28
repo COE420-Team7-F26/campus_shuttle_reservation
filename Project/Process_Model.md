@@ -8,10 +8,10 @@ The main features include:
 - viewing shuttle occupancy
 - booking a shuttle seat
 - cancelling a reservation
-- allowing staff to update shuttle information
+- real time update regarding delays
+- Transport administrator functions such as updating shuttle information, reviewing no-show reports, suspending accounts with repeated no-shows
 - sending notifications about delays, timing changes, and location changes
-- Booking admin functions such as reviewing no-show reports, suspending accounts with repeated no-shows, and resolving disputes between students and drivers
-These features can be divided into different increments. For example, our team can first develop the basic shuttle information and occupancy features, followed by booking and cancellation, and then staff management, notifications and finally the booking admin functions.
+These features can be divided into different increments. For example, our team can develop the basic shuttle information for transport administrator functions. Then, develop occupancy features, followed by booking and cancellation. Later, develop staff management and notifications.
 This approach allows us to have a working system ready and add more functionality with each increment. Each increment will also be tested before the next features are added, which makes it easier to identify and fix problems.
 
 3. Model overheads
