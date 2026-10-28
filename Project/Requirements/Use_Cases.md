@@ -17,6 +17,7 @@
 | UC-15 | Secure driver logout | Driver | The driver initiates a secure logout that instantly terminates all background processes storing session data and tracking location | Yusr |
 | UC-16 | report shuttle delay | shuttle driver | The driver selects the assigned trip and reports a delay with a revised expected arrival time. The system records the update and alerts students who reserved that trip. | serly |
 | UC-17 | change trip departure | transport admin | The administrator selects a scheduled trip and changes its departure time. The system saves the new time and alerts students with reservations on that trip. | serly |
-| UC-18 | change trip route or stop | transport admin | The administrator selects a scheduled trip and changes its departure time. The system saves the new time and alerts students with reservations on that trip. | serly |
+| UC-18 | change trip route or stop | transport admin | The administrator selects a scheduled trip and changes its route. The system saves the new route and alerts students with reservations on that trip. | serly |
 | UC-19 | start location sharing for assigned trip | shuttle driver | The driver opens the assigned trip and starts it. During the active trip, the system receives the driver device location for students tracking their reserved shuttle. | serly |
 | UC-20 | complete assigned trip | shuttle driver | The driver marks the assigned trip complete after arriving. The system closes the trip and stops collecting and sharing that trip’s driver location. | serly |
+| UC-21 | Book Seat | shuttle driver | The student selects a scheduled trip and available seat. The system books the seat only if the trip has seats left and the student has no other reservation on that trip. | Meera |
