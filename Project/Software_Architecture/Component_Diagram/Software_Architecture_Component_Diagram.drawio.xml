@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net">
+  <diagram name="Software Architecture" id="arch">
+    <mxGraphModel dx="3214" dy="1883" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2600" pageHeight="1800" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="m-1" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=230;height=30;fontStyle=1;fontSize=13;fontFamily=Helvetica;" value="Presentation Layer" vertex="1">
+          <mxGeometry height="150" width="2560" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="m-2" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=230;height=30;fontStyle=1;fontSize=13;fontFamily=Helvetica;" value="Application / Business Layer" vertex="1">
+          <mxGeometry height="1330" width="2560" x="20" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="m-3" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;width=230;height=30;fontStyle=1;fontSize=13;fontFamily=Helvetica;" value="Data-Access Layer" vertex="1">
+          <mxGeometry height="150" width="2560" x="20" y="1620" as="geometry" />
+        </mxCell>
+        <mxCell id="m-4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontSize=12;fontFamily=Helvetica;" value="Role-specific screens&lt;br&gt;(Student, Driver, Transport Admin, IT Admin)" vertex="1">
+          <mxGeometry height="70" width="440" x="1080" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m-5" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;size=10;fontSize=12;fontFamily=Helvetica;" value="Persistent records&lt;br&gt;(accounts, sessions, trips, reservations, reports, notifications, error logs)" vertex="1">
+          <mxGeometry height="90" width="540" x="1030" y="1665" as="geometry" />
+        </mxCell>
+        <mxCell id="m-6" edge="1" parent="1" source="m-1" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=12;fontFamily=Helvetica;" target="m-2" value="«use»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-7" edge="1" parent="1" source="m-2" style="endArrow=open;endSize=12;dashed=1;html=1;exitX=0.5;exitY=1;entryX=0.5;entryY=0;fontSize=12;fontFamily=Helvetica;" target="m-3" value="«use»">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CO4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;container=1;collapsible=0;fontSize=12;spacingTop=2;fontFamily=Helvetica;" value="«component»&lt;br&gt;&lt;b style=&quot;font-size:15px;&quot;&gt;CO4: Tracking &amp;amp; Notification&lt;/b&gt;" vertex="1">
+          <mxGeometry height="290" width="560" x="560" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="m-8" parent="CO4" style="shape=module;jettyWidth=8;jettyHeight=4;html=1;" value="" vertex="1">
+          <mxGeometry height="24" width="20" x="524" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="m-9" parent="CO4" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="LocationUpdate" vertex="1">
+          <mxGeometry height="32" width="170" x="30" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="m-10" parent="CO4" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="DelayReport" vertex="1">
+          <mxGeometry height="32" width="170" x="30" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="m-11" parent="CO4" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="{abstract}&lt;br&gt;&lt;i&gt;Notification&lt;/i&gt;" vertex="1">
+          <mxGeometry height="44" width="190" x="290" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m-12" parent="CO4" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="DelayNotification" vertex="1">
+          <mxGeometry height="32" width="150" x="230" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="m-13" edge="1" parent="CO4" source="m-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="m-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-14" parent="CO4" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="TripChangeNotification" vertex="1">
+          <mxGeometry height="32" width="165" x="390" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="m-15" edge="1" parent="CO4" source="m-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="m-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-16" parent="1" style="ellipse;html=1;aspect=fixed;fontStyle=1;fontSize=12;fontFamily=Helvetica;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="ITrackingNotification" vertex="1">
+          <mxGeometry height="20" width="20" x="830" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="m-17" edge="1" parent="1" source="CO4" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;" target="m-16" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-18" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=12;fontFamily=Helvetica;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;ITrackingNotification&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ validateLocation(update: LocationUpdate): Boolean&lt;br&gt;+ validateDelay(report: DelayReport): Boolean&lt;br&gt;+ sendNotification(notification: Notification): Boolean&lt;br&gt;+ renderNotification(notification: Notification): String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="116" width="307" x="200" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="m-19" edge="1" parent="1" source="CO4" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="m-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CO3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;container=1;collapsible=0;fontSize=12;spacingTop=2;fontFamily=Helvetica;" value="«component»&lt;br&gt;&lt;b style=&quot;font-size:15px;&quot;&gt;CO3: Reservation &amp;amp; No-Show Management&lt;/b&gt;" vertex="1">
+          <mxGeometry height="290" width="600" x="1500" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="m-20" parent="CO3" style="shape=module;jettyWidth=8;jettyHeight=4;html=1;" value="" vertex="1">
+          <mxGeometry height="24" width="20" x="564" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="m-21" parent="CO3" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="Reservation" vertex="1">
+          <mxGeometry height="32" width="160" x="30" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="m-22" parent="CO3" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="{abstract}&lt;br&gt;&lt;i&gt;NoShowReport&lt;/i&gt;" vertex="1">
+          <mxGeometry height="44" width="190" x="330" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m-23" parent="CO3" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="DriverNoShowReport" vertex="1">
+          <mxGeometry height="32" width="175" x="230" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="m-24" edge="1" parent="CO3" source="m-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="m-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-25" parent="CO3" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="StudentNoShowReport" vertex="1">
+          <mxGeometry height="32" width="180" x="415" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="m-26" edge="1" parent="CO3" source="m-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="m-22" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-27" parent="1" style="ellipse;html=1;aspect=fixed;fontStyle=1;fontSize=12;fontFamily=Helvetica;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="INoShowManager" vertex="1">
+          <mxGeometry height="20" width="20" x="1940" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="m-28" edge="1" parent="1" source="CO3" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;" target="m-27" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-29" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=12;fontFamily=Helvetica;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;IReservationManager&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ bookSeat(studentId: String, tripId: String, seatNumber: String): Boolean&lt;br&gt;+ cancelSeat(reservationId: String): Boolean&lt;br&gt;+ getActiveReservations(tripId: String): List&amp;lt;Reservation&amp;gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="412" x="2150" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="m-30" edge="1" parent="1" source="CO3" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;exitX=1;exitY=0.25;entryX=0;entryY=0.5;" target="m-29" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-31" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=12;fontFamily=Helvetica;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;INoShowManager&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ submitDriverNoShow(report: DriverNoShowReport): Boolean&lt;br&gt;+ submitStudentNoShow(report: StudentNoShowReport): Boolean&lt;br&gt;+ processReport(reportId: String, decision: String): Void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="375" x="2150" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="m-32" edge="1" parent="1" source="CO3" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;exitX=1;exitY=0.75;entryX=0;entryY=0.5;" target="m-31" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-33" parent="1" style="shape=providedRequiredInterface;html=1;direction=west;fontStyle=1;fontSize=12;fontFamily=Helvetica;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="IReservationManager" vertex="1">
+          <mxGeometry height="24" width="24" x="1298" y="463" as="geometry" />
+        </mxCell>
+        <mxCell id="m-34" edge="1" parent="1" source="CO3" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.5;" target="m-33" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-35" edge="1" parent="1" source="CO4" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;" target="m-33" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="CO2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;container=1;collapsible=0;fontSize=12;spacingTop=2;fontFamily=Helvetica;" value="«component»&lt;br&gt;&lt;b style=&quot;font-size:15px;&quot;&gt;CO2: Shuttle &amp;amp; Route&lt;/b&gt;" vertex="1">
+          <mxGeometry height="190" width="520" x="1040" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="m-36" parent="CO2" style="shape=module;jettyWidth=8;jettyHeight=4;html=1;" value="" vertex="1">
+          <mxGeometry height="24" width="20" x="484" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="m-37" parent="CO2" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="Shuttle" vertex="1">
+          <mxGeometry height="32" width="130" x="30" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="m-38" parent="CO2" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="Route" vertex="1">
+          <mxGeometry height="32" width="130" x="195" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="m-39" parent="CO2" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="ScheduledTrip" vertex="1">
+          <mxGeometry height="32" width="140" x="360" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="m-40" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=12;fontFamily=Helvetica;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;IShuttleManagement&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ updateShuttleInfo(shuttle: Shuttle): Void&lt;br&gt;+ setStatus(shuttleId: String, status: String): Void&lt;br&gt;+ getCurrentLocation(shuttleId: String): String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="282" x="60" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="m-41" edge="1" parent="1" source="CO2" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;exitX=0;exitY=0.15;entryX=1;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="m-40" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-42" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=12;fontFamily=Helvetica;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;IRouteManagement&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ updateRoute(route: Route): Void&lt;br&gt;+ getRouteDetails(routeId: String): String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="84" width="241" x="60" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="m-43" edge="1" parent="1" source="CO2" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;exitX=0;exitY=0.5;entryX=1;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="m-42" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-44" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=12;fontFamily=Helvetica;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;IScheduleManagement&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ updateSchedule(schedule: ScheduledTrip): Void&lt;br&gt;+ getScheduleDetails(tripId: String): String&lt;/p&gt;" vertex="1">
+          <mxGeometry height="84" width="290" x="60" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="m-45" edge="1" parent="1" source="CO2" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;exitX=0;exitY=0.85;entryX=1;entryY=0.5;edgeStyle=orthogonalEdgeStyle;" target="m-44" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-46" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=12;fontFamily=Helvetica;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;ITripContext&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ getTrip(tripId: String): ScheduledTrip&lt;br&gt;+ isAssignedDriver(tripId: String, driverId: String): Boolean&lt;/p&gt;" vertex="1">
+          <mxGeometry height="84" width="332" x="1690" y="860" as="geometry" />
+        </mxCell>
+        <mxCell id="m-47" edge="1" parent="1" source="CO2" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="m-46" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-48" parent="1" style="shape=providedRequiredInterface;html=1;direction=north;fontStyle=1;fontSize=12;fontFamily=Helvetica;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=6;" value="ITripContext" vertex="1">
+          <mxGeometry height="24" width="24" x="1288" y="733" as="geometry" />
+        </mxCell>
+        <mxCell id="m-49" edge="1" parent="1" source="CO2" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=0;" target="m-48" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-50" edge="1" parent="1" source="CO4" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;rounded=0;jumpStyle=arc;jumpSize=10;exitX=0.75;exitY=1;" target="m-48" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="980" y="700" />
+              <mxPoint x="1300" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-51" edge="1" parent="1" source="CO3" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;rounded=0;jumpStyle=arc;jumpSize=10;exitX=0.1;exitY=1;" target="m-48" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1560" y="700" />
+              <mxPoint x="1300" y="700" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="CO1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;container=1;collapsible=0;fontSize=12;spacingTop=2;fontFamily=Helvetica;" value="«component»&lt;br&gt;&lt;b style=&quot;font-size:15px;&quot;&gt;CO1: User &amp;amp; Access&lt;/b&gt;" vertex="1">
+          <mxGeometry height="300" width="1320" x="660" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="m-52" parent="CO1" style="shape=module;jettyWidth=8;jettyHeight=4;html=1;" value="" vertex="1">
+          <mxGeometry height="24" width="20" x="1284" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="m-53" parent="CO1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="UserAccount" vertex="1">
+          <mxGeometry height="32" width="150" x="585" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="m-54" parent="CO1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="Student" vertex="1">
+          <mxGeometry height="32" width="170" x="170" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="m-55" edge="1" parent="CO1" source="m-54" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="m-53" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-56" parent="CO1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="Driver" vertex="1">
+          <mxGeometry height="32" width="170" x="410" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="m-57" edge="1" parent="CO1" source="m-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="m-53" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-58" parent="CO1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="TransportAdmin" vertex="1">
+          <mxGeometry height="32" width="170" x="660" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="m-59" edge="1" parent="CO1" source="m-58" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="m-53" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-60" parent="CO1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="ITAdministrator" vertex="1">
+          <mxGeometry height="32" width="170" x="890" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="m-61" edge="1" parent="CO1" source="m-60" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=10;exitX=0.5;exitY=0;entryX=0.5;entryY=1;" target="m-53" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-62" parent="CO1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="UserSession" vertex="1">
+          <mxGeometry height="32" width="170" x="470" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="m-63" parent="CO1" style="rounded=0;whiteSpace=wrap;html=1;fontStyle=1;fontSize=12;fontFamily=Helvetica;" value="SystemErrorLog" vertex="1">
+          <mxGeometry height="32" width="170" x="660" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="m-64" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=12;fontFamily=Helvetica;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;IAuthentication&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ login(username: String, password: String): Boolean&lt;br&gt;+ logout(sessionId: String): Void&lt;br&gt;+ updateActivity(sessionId: String): Void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="100" width="305" x="285" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="m-65" edge="1" parent="1" source="CO1" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;exitX=0;exitY=0.3;entryX=1;entryY=0.5;" target="m-64" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-66" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=12;fontFamily=Helvetica;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;IAccessControl&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ authorize(sessionId: String, action: String, contextId: String): Boolean&lt;/p&gt;" vertex="1">
+          <mxGeometry height="68" width="401" x="60" y="1370" as="geometry" />
+        </mxCell>
+        <mxCell id="m-67" edge="1" parent="1" source="CO1" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;exitX=0;exitY=0.75;entryX=1;entryY=0.5;" target="m-66" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-68" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=12;fontFamily=Helvetica;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;IAccountManagement&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ suspendAccount(userId: String): Void&lt;/p&gt;" vertex="1">
+          <mxGeometry height="68" width="232" x="2060" y="1250" as="geometry" />
+        </mxCell>
+        <mxCell id="m-69" edge="1" parent="1" source="CO1" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;exitX=1;exitY=0.3;entryX=0;entryY=0.5;" target="m-68" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-70" parent="1" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=12;fontFamily=Helvetica;" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;«interface»&lt;br&gt;&lt;b&gt;IErrorLog&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:6px;&quot;&gt;+ recordLog(timestamp: DateTime, errorType: String, description: String): Void&lt;br&gt;+ viewErrorLogs(): List&amp;lt;SystemErrorLog&amp;gt;&lt;/p&gt;" vertex="1">
+          <mxGeometry height="84" width="438" x="2060" y="1360" as="geometry" />
+        </mxCell>
+        <mxCell id="m-71" edge="1" parent="1" source="CO1" style="endArrow=block;endFill=0;endSize=12;dashed=1;html=1;exitX=1;exitY=0.75;entryX=0;entryY=0.5;" target="m-70" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-72" parent="1" style="ellipse;html=1;aspect=fixed;fontStyle=1;fontSize=12;fontFamily=Helvetica;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="IAuthentication" vertex="1">
+          <mxGeometry height="20" width="20" x="750" y="1115" as="geometry" />
+        </mxCell>
+        <mxCell id="m-73" edge="1" parent="1" source="CO1" style="endArrow=none;html=1;rounded=0;exitX=0.0758;exitY=0;" target="m-72" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-74" parent="1" style="ellipse;html=1;aspect=fixed;fontStyle=1;fontSize=12;fontFamily=Helvetica;labelPosition=center;verticalLabelPosition=top;align=center;verticalAlign=bottom;" value="IErrorLog" vertex="1">
+          <mxGeometry height="20" width="20" x="1810" y="1115" as="geometry" />
+        </mxCell>
+        <mxCell id="m-75" edge="1" parent="1" source="CO1" style="endArrow=none;html=1;rounded=0;exitX=0.8788;exitY=0;" target="m-74" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-76" parent="1" style="shape=providedRequiredInterface;html=1;direction=north;fontStyle=1;fontSize=12;fontFamily=Helvetica;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=6;" value="IAccessControl" vertex="1">
+          <mxGeometry height="24" width="24" x="1288" y="1098" as="geometry" />
+        </mxCell>
+        <mxCell id="m-77" edge="1" parent="1" source="CO1" style="endArrow=none;html=1;rounded=0;exitX=0.4848;exitY=0;" target="m-76" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-78" edge="1" parent="1" source="CO2" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;" target="m-76" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-79" edge="1" parent="1" source="CO4" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;rounded=0;jumpStyle=arc;jumpSize=10;exitX=0.15;exitY=1;" target="m-76" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="644" y="1080" />
+              <mxPoint x="1300" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-80" edge="1" parent="1" source="CO3" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;rounded=0;jumpStyle=arc;jumpSize=10;exitX=0.25;exitY=1;" target="m-76" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1650" y="1080" />
+              <mxPoint x="1300" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="m-81" parent="1" style="shape=providedRequiredInterface;html=1;direction=north;fontStyle=1;fontSize=12;fontFamily=Helvetica;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=6;" value="IAccountManagement" vertex="1">
+          <mxGeometry height="24" width="24" x="1938" y="1113" as="geometry" />
+        </mxCell>
+        <mxCell id="m-82" edge="1" parent="1" source="CO1" style="endArrow=none;html=1;rounded=0;exitX=0.9773;exitY=0;" target="m-81" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m-83" edge="1" parent="1" source="CO3" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;html=1;rounded=0;jumpStyle=arc;jumpSize=10;exitX=0.95;exitY=1;" target="m-81" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2070" y="1080" />
+              <mxPoint x="1950" y="1080" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
