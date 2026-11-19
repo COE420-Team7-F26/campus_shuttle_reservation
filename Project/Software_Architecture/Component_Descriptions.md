@@ -1,14 +1,6 @@
-# Exercise 3: Component Description — Serly's Contribution
-Serly Torrosian — G00098361
-
-| Field | Description |
-|---|---|
-| Component ID | CO4 |
-| Component name | Tracking and Notification |
-| Responsibilities | Validate and manage location updates, validate driver delay reports, and prepare and send notifications about delays and trip changes. |
-| Supported functionality | Live shuttle tracking and location sharing (UC07, UC19, UC20); shuttle delay reporting and notification (UC16); notification of changes to trip time, route, or stop location (UC17, UC18). |
-| Included classes | LocationUpdate, DelayReport, Notification, DelayNotification, TripChangeNotification |
-
-LocationUpdate stores latitude, longitude, and the recording time for a trip. Updates originate automatically from the assigned driver's device while sharing is active. DelayReport stores the delay duration and revised expected arrival time. Notification is the abstract parent class for common delivery behavior. DelayNotification and TripChangeNotification specialize the message content.
-
-This component obtains trip and driver-assignment information from Shuttle and Route, active reservations from Reservation and No-Show, and authorization from User and Access. It only notifies students with active reservations on the affected trip. Tracking stops when location sharing ends or the trip is completed.
+| ID | Component Name | Responsibilities | Included Classes |
+| :--- | :--- | :--- | :--- |
+| CO1 | User and Access | Handles user authentication, credentials management, session control, and role-based access authorization across the system. | UserAccount, UserSession, Student, Driver, SystemErrorLog, TransportAdmin, ITAdminstrator |
+| CO2 | Shuttle & Route | Manages shuttles, routes, stops, scheduled trips, driver assignments, and trip status details. | Shuttle, Route, Schedule |
+| CO3 | Reservation & No-Show Management | Responsible for managing student bookings for the trips. Enforces booking rules such as cancellation within 10 minutes of booking and one booking per trip. Cancellations are processed and no-shows reported by drivers/students. | Reservation, NoShowReport, DriverNoShowReport, StudentNoShowReport |
+| CO4 | Tracking & Notification | Validates and manages live location updates, processes driver delay reports, and sends trip/delay notifications to users with active reservations. | LocationUpdate, DelayReport, Notification, DelayNotification, TripChangeNotification |
